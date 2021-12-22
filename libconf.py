@@ -656,10 +656,11 @@ def dump_value(key, value, f, indent=0):
     else:
         key_prefix = key + ' = '
         key_prefix_nl = key + ' =\n' + spaces
+        key_prefix_nl_dict = key + ' :\n' + spaces
 
     dtype = get_dump_type(value)
     if dtype == 'd':
-        f.write(u'{}{}{{\n'.format(spaces, key_prefix_nl))
+        f.write(u'{}{}{{\n'.format(spaces, key_prefix_nl_dict))
         dump_dict(value, f, indent + 4)
         f.write(u'{}}}'.format(spaces))
     elif dtype == 'l':
