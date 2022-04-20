@@ -2,8 +2,8 @@ from setuptools import setup
 
 setup(
     name='libconf',
-    version='2.0.1',
-    description="A pure-Python libconfig reader/writer with permissive license",
+    version='42.0.0',
+    description="A pure-Python libconfig reader/writer with permissive license. Jasper's Fork",
     long_description=open('README.rst').read(),
     author="Christian Aichinger",
     author_email="Greek0@gmx.net",
